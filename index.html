@@ -4,7 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kausar Medical Center</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(135deg, #008080, #006666);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      max-width: 140px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #008080;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004c4c;
+      text-decoration: underline;
+    }
+
+    .doctor-profile {
+      display: inline-block;
+      width: 160px;
+      margin: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .doctor-profile:hover {
+      transform: scale(1.05);
+    }
+
+    .doctor-profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .services-img {
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    .map {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    footer {
+      background-color: #006666;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,78 +113,76 @@
   </header>
 
   <section class="doctors">
-    <h2>Our Doctors</h2>
+    <h2>Our Dedicated Specialists</h2>
 
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Malik Shehryar"/>
       <p>Dr. Malik Shehryar<br/><small>Medical Specialist</small></p>
     </div>
-
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Tayyab Hamid"/>
-      <p>Dr. Tayyab Hamid<br/><small>Asst. Prof., NUST School of Health Sciences</small></p>
+      <p>Dr. Tayyab Hamid<br/><small>Asst. Prof., NUST</small></p>
     </div>
-
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Majida"/>
       <p>Dr. Majida<br/><small>Asst. Prof., PIMS</small></p>
     </div>
-
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Shah Bibi"/>
       <p>Dr. Shah Bibi<br/><small>Gynecologist</small></p>
     </div>
-
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Zara Jamali"/>
       <p>Dr. Zara Jamali<br/><small>Gynecologist</small></p>
     </div>
-
     <div class="doctor-profile">
       <img src="https://via.placeholder.com/120" alt="Dr. Mujtaba Shahbaz"/>
       <p>Dr. Mujtaba Shahbaz<br/><small>Radiologist</small></p>
     </div>
+    <div class="doctor-profile">
+      <img src="https://via.placeholder.com/120" alt="Dr. Faizan Younus"/>
+      <p>Dr. Faizan Younus<br/><small>Cardiologist</small></p>
+    </div>
+    <div class="doctor-profile">
+      <img src="https://via.placeholder.com/120" alt="Dr. Mahrukh Khan"/>
+      <p>Dr. Mahrukh Khan<br/><small>Dentist</small></p>
+    </div>
+    <div class="doctor-profile">
+      <img src="https://via.placeholder.com/120" alt="Dr. Muqaddar Shah"/>
+      <p>Dr. Muqaddar Shah<br/><small>Assoc. Prof., PIMS – Pediatrician</small></p>
+    </div>
   </section>
 
   <section class="services">
-    <h2>Services Offered</h2>
+    <h2>Our Comprehensive Services</h2>
     <img src="https://via.placeholder.com/700x300?text=Healthcare+Services" alt="Services Overview" class="services-img"/>
     <ul>
-      <li>All kinds of blood tests</li>
-      <li>Emergency care</li>
-      <li>Short-term admission</li>
-      <li>Consultations with specialists</li>
-      <li>Physiotherapy services</li>
-      <li>Ultrasound scans (of all sorts)</li>
+      <li>Blood Testing & Diagnostics</li>
+      <li>24/7 Emergency Services</li>
+      <li>In-Clinic Short-Term Admissions</li>
+      <li>Expert Specialist Consultations</li>
+      <li>Modern Physiotherapy Treatments</li>
+      <li>Advanced Ultrasound & Imaging</li>
     </ul>
   </section>
 
   <section class="clinic-info">
-    <h2>Clinic Details</h2>
+    <h2>Visit Us</h2>
     <p><strong>Address:</strong> Ground Floor, Raja Haq Nawaz Plaza, G-11 Markaz, Islamabad</p>
     <p><strong>Phone:</strong> (051) 6162828</p>
-    <p><strong>Hours:</strong></p>
-    <ul>
-      <li>Monday to Sunday: 8:00 AM – 11:30 PM</li>
-    </ul>
+    <p><strong>Hours:</strong> Monday to Sunday, 8:00 AM – 11:30 PM</p>
     <p><strong><a href="https://g.co/kgs/Gtmo9qs" target="_blank">Get Directions</a></strong></p>
-    <p><strong><a href="https://www.instagram.com/kausarmedicalcenter" target="_blank">Instagram</a></strong></p>
+    <p><strong><a href="https://www.instagram.com/kausarmedicalcenter" target="_blank">Follow us on Instagram</a></strong></p>
 
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.680342311938!2d73.01536067545563!3d33.67661863699225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df950a6489fa99%3A0xb87279e06245669a!2sKausar%20Medical%20Center!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Kausar Medical Center. All rights reserved.</p>
+    <p>&copy; 2025 Kausar Medical Center. Excellence in Care, Clarity in Communication.</p>
   </footer>
 </body>
 </html>
